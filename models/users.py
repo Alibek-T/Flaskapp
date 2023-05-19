@@ -3,11 +3,11 @@ import sqlite3
 
 class User:
 
-    def __init__(self, username, email, password, register_date):
-        self.username = username
-        self.email = email
-        self.password = password
-        self.register_date = register_date
+    def __init__(self):  # , username, email, password, register_date):
+        # self.username = username
+        # self.email = email
+        # self.password = password
+        # self.register_date = register_date
         self.db = 'db.sqlite3'
         self.connection = sqlite3.connect(self.db)
         self.cursor = self.connection.cursor()
